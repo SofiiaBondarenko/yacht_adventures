@@ -1,1 +1,62 @@
 @use "../base/var" as *;
+
+.hero{
+    margin-top: 40px;
+
+    @media screen and (min-width:724px) {
+        margin-top: 64px;;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:1236px) {
+        flex-direction: row-reverse;
+    }
+}
+
+    &__clientimg{
+        width: 56px;
+        height: 56px;
+    }
+
+    &__manimg{
+        width: 233px;
+        height: 233px;
+    }
+
+    &__yachtimg{
+        width: 378px;
+        height: 221px;
+    }
+
+
+    &__title{
+        font-size: 36px;
+        color: $main-color;
+        font-weight: 500;
+        margin-top: 14px;
+        margin-bottom: 24px;
+
+        @media screen and (min-width:724px) {
+            font-size: 60px;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__span{
+        color: $accent-color;
+    }
+
+    &__subtitle{
+        font-size: 14px;
+        font-weight: 400;
+        color: $main-color;
+
+        @media screen and (min-width:724px) {
+            font-size: 16px;
+        }
+    }
+}
