@@ -1,0 +1,6 @@
+@use "../base/var" as *;
+
+body{
+    background-color: $bg-color;
+    font-family: DM Sans;
+}
