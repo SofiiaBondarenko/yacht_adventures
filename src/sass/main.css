@@ -45,7 +45,7 @@ textarea:focus-visible {
 }
 
 .container {
-  max-width: 1216px;
+  max-width: 1236px;
   margin-inline: auto;
   padding: 0 10px;
   outline: 1px solid red;
@@ -55,15 +55,14 @@ textarea:focus-visible {
     width: 355px;
   }
 }
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 724px) {
   .container {
-    width: 736px;
-    padding: 0 16px;
+    width: 724px;
   }
 }
-@media screen and (min-width: 1248px) {
+@media screen and (min-width: 1236px) {
   .container {
-    width: 1248px;
+    width: 1236px;
   }
 }
 
