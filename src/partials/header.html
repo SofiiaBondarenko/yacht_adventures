@@ -1,8 +1,11 @@
-<header>
-    <div class="container">
+<header class="header">
+    <div class="container header__box">
     <a href="../index.html" class="header__logo">
-        svglogo
-        Yach Adventures</a>
+        <svg class="header__logosvg">
+            <use href="../../img/symbol-defs.svg#icon-yacht"></use>
+        </svg>
+        Yach Adventures
+    </a>
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item"><a href="" class="header__link">about</a></li>
@@ -10,5 +13,15 @@
                 <li class="header__item"><a href="" class="header__link">rewievs</a></li>
             </ul>
         </nav>
+        <!-- <div class="mobile is-hidden" data-mobile>
+            <button type="button" class="mobile__close" data-mobile-close><svg class="mobile__icon">
+                    <use href="./imgs/symbol-defs.svg#icon-close"></use>
+                </svg></button>
+            <ul class="mobile__list">
+                <li class="mobile__item"><a href="" class="mobile__link">about</a></li>
+                <li class="mobile__item"><a href="" class="mobile__link">yachts</a></li>
+                <li class="mobile__item"><a href="" class="mobile__link">rewievs</a></li>
+            </ul>
+        </div> -->
     </div>
 </header>

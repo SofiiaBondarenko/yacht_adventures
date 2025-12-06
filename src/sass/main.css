@@ -44,6 +44,11 @@ textarea:focus-visible {
   box-shadow: none;
 }
 
+body {
+  background-color: #11131F;
+  font-family: DM Sans;
+}
+
 .container {
   max-width: 1236px;
   margin-inline: auto;
@@ -63,6 +68,107 @@ textarea:focus-visible {
 @media screen and (min-width: 1236px) {
   .container {
     width: 1236px;
+  }
+}
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #93ABAE;
+}
+@media screen and (min-width: 1248px) {
+  .header {
+    padding: 32px 0;
+  }
+}
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  gap: 24px;
+}
+.header__logosvg {
+  width: 16px;
+  height: 16px;
+}
+@media screen and (min-width: 724px) {
+  .header__logosvg {
+    width: 23px;
+    height: 23px;
+  }
+}
+.header__link {
+  color: #F6F5EF;
+  text-transform: uppercase;
+}
+.header__logo {
+  color: #F6F5EF;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.mobile__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.hero {
+  margin-top: 40px;
+}
+@media screen and (min-width: 724px) {
+  .hero {
+    margin-top: 64px;
+  }
+}
+.hero__box {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1236px) {
+  .hero__box {
+    flex-direction: row-reverse;
+  }
+}
+.hero__clientimg {
+  width: 56px;
+  height: 56px;
+}
+.hero__manimg {
+  width: 233px;
+  height: 233px;
+}
+.hero__yachtimg {
+  width: 378px;
+  height: 221px;
+}
+.hero__title {
+  font-size: 36px;
+  color: #F6F5EF;
+  font-weight: 500;
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 724px) {
+  .hero__title {
+    font-size: 60px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+}
+.hero__span {
+  color: #93ABAE;
+}
+.hero__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #F6F5EF;
+}
+@media screen and (min-width: 724px) {
+  .hero__subtitle {
+    font-size: 16px;
   }
 }
 
