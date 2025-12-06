@@ -1,1 +1,44 @@
-@use "../base/var" as *;
+@use '../base/var' as *;
+
+.activities {
+  background-color: $bg-color;
+  padding-bottom: 80px;
+
+  @media screen and (min-width: 736px) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1248px) {
+    padding-bottom: 164px;
+  }
+
+  &__btn {
+    color: $bg-color;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.81px;
+    display: inline-flex;
+    padding: 14px 28px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 60px;
+    background: $main-color;
+  }
+
+  &__img:first-child {
+    width: 704px;
+    height: 632px;
+  }
+
+  &__img:nth-child(2) {
+    width: 400px;
+    height: 389px;
+  }
+
+  &__img:last-child {
+    width: 380px;
+    height: 352px;
+  }
+}
