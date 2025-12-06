@@ -15,7 +15,7 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/yacht_adventures/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/yacht_adventures/assets/index-b2fac99f.css">
+    <link rel="stylesheet" href="/yacht_adventures/assets/index-d0787283.css">
   </head>
   <body>
     <header class="header">
@@ -313,19 +313,37 @@
  <div class="container">
   <ul class="activities__list">
     <li class="activities__item">
-      <img src="../img/diving@1x.webp" alt="Diving" class="activities__img" /><button
+      <picture>
+        <source media="(min-width:1248px)" srcset="../img/desktop/diving-desktop@1x.webp 1x, ../img/desktop/diving-desktop@2x.webp 2x">
+        <source media="(min-width:735px)" srcset="../img/tablet/diving-tablet@1x.webp 1x, ../img/tablet/diving-tablet@2x.webp 2x">
+        <source media="(max-width:734px)" srcset="../img/mobile/diving-mobile@1x.webp 1x, ../img/mobile/diving-mobile@2x.webp 2x">
+      <img src="../img/diving@1x.webp" alt="Diving" class="activities__img" />
+      </picture>
+      <button
         class="activities__btn"
         type="button"
       >Diving</button>
     </li>
     <li class="activities__item">
-      <img src="../img/fishing@1x.webp" alt="Fishing" class="activities__img" /><button
+      <picture>
+        <source media="(min-width:1248px)" srcset="../img/desktop/fishing-desktop@1x.webp 1x, ../img/desktop/fishing-desktop@2x.webp 2x">
+        <source media="(min-width:735px)" srcset="../img/tablet/fishing-tablet@1x.webp 1x, ../img/tablet/fishing-tablet@2x.webp 2x">
+        <source media="(max-width:734px)" srcset="../img/mobile/fishing-mobile@1x.webp 1x, ../img/mobile/fishing-mobile@2x.webp 2x">
+      <img src="../img/fishing@1x.webp" alt="Fishing" class="activities__img" />
+      </picture>
+      <button
         class="activities__btn"
         type="button"
       >Fishing</button>
     </li>
     <li class="activities__item">
-      <img src="../img/sunbathing@1x.webp" alt="Sunbathing" class="activities__img" /><button
+      <picture>
+        <source media="(min-width:1248px)" srcset="../img/desktop/sunbathing-desktop@1x.webp 1x, ../img/desktop/sunbathing-desktop@2x.webp 2x">
+        <source media="(min-width:735px)" srcset="../img/tablet/sunbathing-tablet@1x.webp 1x, ../img/tablet/sunbathing-tablet@2x.webp 2x">
+        <source media="(max-width:734px)" srcset="../img/mobile/sunbathing-mobile@1x.webp 1x, ../img/mobile/sunbathing-mobile@2x.webp 2x">
+      <img src="../img/sunbathing@1x.webp" alt="Sunbathing" class="activities__img" />
+      </picture>
+      <button
         class="activities__btn"
         type="button"
       >Sunbathing</button>
@@ -336,6 +354,7 @@
 
     <section class="rent">
     <div class="container">
+      <list class="activities__list"> </list>
       <h2 class="rent__tittle">Rent a yacht now</h2>
       <picture>
         <source media="(min-width:1248px)" srcset="../img/desktop/rent-desktop@1x.webp 1x, ../img/desktop/rent-desktop@2x.webp 2x">
@@ -343,7 +362,7 @@
         <source media="(max-width:734px)" srcset="../img/mobile/rent-mobile@1x.webp 1x, ../img/mobile/rent-mobile@2x.webp 2x">
       <img src="../img/rent@1x.webp" alt="rent" class="rent__img">
       </picture>
-      <form action="" class="rent__form">
+      <form class="rent__form">
         <label class="rent__label">
             Full Name
             <input required class="rent__input" type="text">
