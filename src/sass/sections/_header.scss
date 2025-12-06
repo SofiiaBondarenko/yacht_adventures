@@ -1,52 +1,48 @@
-@use "../base/var" as *;
+@use '../base/var' as *;
 
-.header{
-    padding: 20px 0;
-    border-bottom: 1px solid $accent-color;
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid $accent-color;
 
-    @media screen and (min-width:1248px) {
-        padding:32px 0;
+  @media screen and (min-width: 1236px) {
+    padding: 32px 0;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__logosvg {
+    width: 16px;
+    height: 16px;
+
+    @media screen and (min-width: 724px) {
+      width: 23px;
+      height: 23px;
     }
-    
-    &__box{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  }
 
-    &__list{
-        display: flex;
-        gap: 24px;
-    }
+  &__link {
+    color: $main-color;
+    text-transform: uppercase;
+  }
 
-    &__logosvg{
-        width: 16px;
-        height: 16px;
-
-        @media screen and (min-width:724px) {
-            width: 23px;
-            height: 23px;
-    }
-
-    }
-
-    &__link{
-        color: $main-color;
-        text-transform: uppercase;
-
-    }
-
-    &__logo{
-        color: $main-color;
-        align-items: center;
-        text-transform: uppercase;
-        display: flex;
-
-    }
+  &__logo {
+    color: $main-color;
+    align-items: center;
+    text-transform: uppercase;
+    display: flex;
+  }
 }
 
-
-.mobile__icon{
-    width: 24px;
-    height: 24px;
+.mobile__icon {
+  width: 24px;
+  height: 24px;
 }
