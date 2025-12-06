@@ -1,2 +1,17 @@
 @use "../base/var" as *;
 
+.reviews{
+    
+
+    @media screen and (min-width:736px) {
+
+    }
+
+    @media screen and (min-width:1248px) {
+        padding-top: 164px;
+        padding-bottom: 64px;
+    }
+    &__title{
+
+    }
+}
