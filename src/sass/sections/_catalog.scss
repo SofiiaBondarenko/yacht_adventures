@@ -17,7 +17,7 @@
     justify-content: center;
     gap: 16px;
 
-    & :nth-child(2) > .catalog__img {
+    & :nth-child(2):not(.catalog__wrap, .catalog__subtitle, .catalog__elements, .catalog__elems, .catalog__elem, .catalog__element){
       display: none;
 
       @media screen and (min-width: 724px) {
@@ -25,7 +25,7 @@
       }
     }
 
-    & :nth-child(3) > .catalog__img {
+    & :nth-child(3):not(.catalog__lists, .catalog__elem, .catalog__element){
       display: none;
 
       @media screen and (min-width: 1236px) {
@@ -36,14 +36,14 @@
 
   &__item {
     background-color: $dark_accent-color;
-    padding: 16px 16px 32px;
+    padding: 18px 18px 24px;
     border-radius: 24px;
   }
 
   &__img {
-    width: 312px;
-    height: 268px;
-    margin-bottom: 32px;
+    width: 299px;
+    height: 251px;
+    margin-bottom: 24px;
   }
 
   &__wrap{
@@ -72,6 +72,27 @@
     text-transform: uppercase;
   }
 
+  &__lists{
+    display: flex;
+    align-items: baseline;
+    gap: 32px;
+    margin-right: 127px;
+  }
+
+  &__items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  &__elems{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
   &__text {
     color: $main-color;
     font-size: 14px;
@@ -87,5 +108,12 @@
     font-weight: 400;
     line-height: 118%;
     letter-spacing: 0.42px;
+  }
+
+  &__btn{
+    padding: 14px;
+    border-radius: 60px;
+    background-color: transparent;
+    border: 1px solid  $main-color;
   }
 }
