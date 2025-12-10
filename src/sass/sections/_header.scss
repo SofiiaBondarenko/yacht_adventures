@@ -1,17 +1,22 @@
 @use '../base/var' as *;
 
 .header {
-  padding: 20px 0;
+  padding: 24px 0;
   border-bottom: 1px solid $accent-color;
 
-  @media screen and (min-width: 1236px) {
+  @media screen and (min-width: 724px) {
     padding: 32px 0;
   }
 
   &__box {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
+  // @media screen and (min-width: 724px) {
+  //   gap: 269px;
+  // }
+
   }
 
   &__list {
@@ -22,6 +27,8 @@
   &__logosvg {
     width: 16px;
     height: 16px;
+    fill: $accent-color;
+    margin-right: 8px;
 
     @media screen and (min-width: 724px) {
       width: 23px;
@@ -29,9 +36,37 @@
     }
   }
 
+
+  &__btn{
+    background-color: transparent;
+
+    @media screen and (min-width:724px) {
+      display: none;
+    }
+  }
+
+
+  &__menu{
+    width: 24.0px;
+    height: 24.0px;
+    fill: $main-color;
+  }
+
+  &__nav{
+    display: none;
+
+      @media screen and (min-width:724px){
+          display: block;
+      }
+    }
+
   &__link {
     color: $main-color;
     text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.42px;
+
   }
 
   &__logo {
