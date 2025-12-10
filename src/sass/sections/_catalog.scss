@@ -16,8 +16,17 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
+    margin-bottom: 24px;
 
-    & :nth-child(2) > .catalog__img {
+    @media screen and (min-width: 724px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1236px) {
+      margin-bottom: 0;
+    }
+
+    & :nth-child(2):not(.catalog__wrap, .catalog__subtitle, .catalog__elements, .catalog__elems, .catalog__elem, .catalog__element){
       display: none;
 
       @media screen and (min-width: 724px) {
@@ -25,7 +34,7 @@
       }
     }
 
-    & :nth-child(3) > .catalog__img {
+    & :nth-child(3):not(.catalog__lists, .catalog__elem, .catalog__element){
       display: none;
 
       @media screen and (min-width: 1236px) {
@@ -36,21 +45,40 @@
 
   &__item {
     background-color: $dark_accent-color;
-    padding: 16px 16px 32px;
+    padding: 18px 18px 24px;
     border-radius: 24px;
+
+    @media screen and (min-width: 724px) {
+        padding: 16px 16px 32px;
+    }
   }
 
   &__img {
-    width: 312px;
-    height: 268px;
-    margin-bottom: 32px;
+    width: 299px;
+    height: 251px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 724px) {
+      width: 312px;
+      height: 268px;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1236px) {
+      width: 322px;
+      height: 268px;
+    }
   }
 
   &__wrap{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin: 0 0 24px 6px;
+
+    @media screen and (min-width: 724px) {
+      margin: 0 0 32px 16px;
+    }
   }
 
   &__title {
@@ -72,6 +100,31 @@
     text-transform: uppercase;
   }
 
+  &__lists{
+    display: flex;
+    align-items: baseline;
+    gap: 32px;
+    margin-left: 6px;
+
+    @media screen and (min-width: 724px) {
+      margin-left: 16px;
+    }
+  }
+
+  &__items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  &__elems{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
   &__text {
     color: $main-color;
     font-size: 14px;
@@ -87,5 +140,49 @@
     font-weight: 400;
     line-height: 118%;
     letter-spacing: 0.42px;
+  }
+
+  &__listbtn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 14px;
+
+    & :first-child:not(.catalog__icon, .catalog__icons){
+      @media screen and (min-width: 1236px) {
+        position: absolute;
+        right: 280px;
+        bottom: 110px;
+      }
+    }
+
+    & :nth-child(2):not(.catalog__icon, .catalog__icons){
+      @media screen and (min-width: 1236px) {
+        position: absolute;
+        left: 885px;
+        bottom: 110px;
+      }
+    }
+  }
+
+  &__btn{
+    width: 46px;
+    height: 36px;
+    padding: 14px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid  $main-color;
+
+    &:first-child{
+      fill: $main-color;
+    }
+  }
+
+  &__icons{
+    transform: rotate(180deg);
   }
 }
