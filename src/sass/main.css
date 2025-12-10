@@ -717,7 +717,6 @@ body {
 }
 
 .activities {
-  background-color: #11131F;
   padding-bottom: 80px;
 }
 @media screen and (min-width: 724px) {
@@ -750,6 +749,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+@media screen and (min-width: 724px) {
+  .activities__list {
+    gap: 32px;
+  }
 }
 @media screen and (min-width: 1236px) {
   .activities__list {
@@ -786,12 +790,14 @@ body {
   .activities__item:nth-child(2) {
     width: 400px;
     height: 389px;
+    margin-left: 304px;
   }
 }
 @media screen and (min-width: 1236px) {
   .activities__item:nth-child(2) {
     width: 440px;
     height: 428px;
+    margin-left: 0px;
   }
 }
 .activities__item:last-child {
