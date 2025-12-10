@@ -2,7 +2,12 @@
   <div class="container">
     <ul class="catalog__list">
       <li class="catalog__item">
-        <img class="catalog__img" src="./img/arrow@1x.webp" alt="white yacht model arrow" />
+        <picture>
+          <source media="(min-width:1236px)" srcset="./img/desktop/arrow-desktop@1x.webp 1x, ./img/desktop/arrow-desktop@2x.webp 2x">
+          <source media="(min-width:725px)" srcset="./img/tablet/arrow-tablet@1x.webp 1x, ./img/tablet/arrow-tablet@2x.webp 2x">
+          <source media="(max-width:724px)" srcset="./img/mobile/arrow-mobile@1x.webp 1x, ./img/mobile/arrow-mobile@2x.webp 2x">
+          <img class="catalog__img" src="./img/arrow@1x.webp" alt="white yacht model arrow" />
+        </picture>
         <div class="catalog__wrap">
           <h2 class="catalog__title">Arrow</h2>
           <h3 class="catalog__subtitle">luxury yachts</h3>
@@ -29,7 +34,12 @@
         </ul>
       </li>
       <li class="catalog__item">
-        <img class="catalog__img" src="./img/benetti@1x.webp" alt="white yacht model Benetti Oasis 40M BO122"/>
+        <picture>
+          <source media="(min-width:1236px)" srcset="./img/desktop/benetti-desktop@1x.webp 1x, ./img/desktop/benetti-desktop@2x.webp 2x">
+          <source media="(min-width:725px)" srcset="./img/tablet/benetti-tablet@1x.webp 1x, ./img/tablet/benetti-tablet@2x.webp 2x">
+          <source media="(max-width:724px)" srcset="./img/mobile/benetti-mobile@1x.webp 1x, ./img/mobile/benetti-mobile@2x.webp 2x">
+          <img class="catalog__img" src="./img/benetti@1x.webp" alt="white yacht model Benetti Oasis 40M BO122"/>
+        </picture>
         <div class="catalog__wrap">
           <h2 class="catalog__title">Benetti Oasis 40M...</h2>
           <h3 class="catalog__subtitle">luxury yachts</h3>
@@ -68,7 +78,12 @@
         </ul>
       </li>
       <li class="catalog__item">
-        <img class="catalog__img" src="./img/belle@1x.webp" alt="white yacht model Belle Anna"/>
+        <picture>
+          <source media="(min-width:1236px)" srcset="./img/desktop/belle-desktop@1x.webp 1x, ./img/desktop/belle-desktop@2x.webp 2x">
+          <source media="(min-width:725px)" srcset="./img/tablet/belle-tablet@1x.webp 1x, ./img/tablet/belle-tablet@2x.webp 2x">
+          <source media="(max-width:724px)" srcset="./img/mobile/belle-mobile@1x.webp 1x, ./img/mobile/belle-mobile@2x.webp 2x">
+          <img class="catalog__img" src="./img/belle@1x.webp" alt="white yacht model Belle Anna"/>
+        </picture>
         <div class="catalog__wrap">
           <h2 class="catalog__title">Belle Anna</h2>
           <h3 class="catalog__subtitle">luxury yachts</h3>
@@ -85,7 +100,7 @@
           </li>
           <li class="catalog__elements">
             <ul class="catalog__elems">
-              <li class="catalog__element"><p class="catalog__desk">50m(155ft)</p></li>
+              <li class="catalog__element"><p class="catalog__desk">50M(155ft)</p></li>
               <li class="catalog__element"><p class="catalog__desk">ISA</p></li>
               <li class="catalog__element"><p class="catalog__desk">2012</p></li>
               <li class="catalog__element"><p class="catalog__desk">12 in 6 cabins</p></li>
@@ -99,14 +114,14 @@
         <li class="catalog__itembtn">
             <button type="button" class="catalog__btn">
                 <svg class="catalog__icon">
-                    <use href="./img/symbol-defs.svg#"></use>
+                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
                 </svg>
             </button>
         </li>
         <li class="catalog__itembtn">
             <button type="button" class="catalog__btn">
                 <svg class="catalog__icons">
-                    <use href="./img/symbol-defs.svg#"></use>
+                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
                 </svg>
             </button>
         </li>
