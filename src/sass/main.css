@@ -468,13 +468,11 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
-    margin-bottom: 83px;
   }
 }
 @media screen and (min-width: 1236px) {
   .choose__list {
     align-items: flex-start;
-    margin-bottom: 95px;
   }
 }
 .choose__list :first-child {
@@ -536,7 +534,7 @@ body {
 }
 .choose__wrap {
   position: relative;
-  bottom: 100px;
+  bottom: 150px;
 }
 @media screen and (min-width: 724px) {
   .choose__wrap {
@@ -572,6 +570,77 @@ body {
     width: 882px;
     font-size: 100px;
     letter-spacing: -4.5px;
+  }
+}
+.choose__title::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 255px;
+  height: 255px;
+  transform: rotate(-44.916deg);
+  background-image: radial-gradient(circle, #e7f9ff 0%, #11131F 100%);
+  background-size: 255px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+  filter: blur(90px);
+  position: absolute;
+  right: 150px;
+  bottom: 0px;
+}
+@media screen and (min-width: 724px) {
+  .choose__title::before {
+    width: 399px;
+    height: 399px;
+    background-size: 399px;
+    right: 280px;
+    bottom: 30px;
+  }
+}
+@media screen and (min-width: 1236px) {
+  .choose__title::before {
+    width: 414px;
+    height: 414px;
+    background-size: 414px;
+    right: 0;
+    left: 66px;
+    bottom: 86px;
+  }
+}
+.choose__title::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 195px;
+  height: 195px;
+  transform: rotate(-44.916deg);
+  background-image: radial-gradient(circle, #a6a9b2 0%, #11131F 100%);
+  background-size: 195px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  filter: blur(90px);
+  position: absolute;
+  bottom: 66px;
+  left: 196px;
+}
+@media screen and (min-width: 724px) {
+  .choose__title::after {
+    width: 304px;
+    height: 304px;
+    background-size: 304px;
+    bottom: 110px;
+    left: 356px;
+  }
+}
+@media screen and (min-width: 1236px) {
+  .choose__title::after {
+    width: 316px;
+    height: 316px;
+    background-size: 316px;
+    bottom: 165px;
+    left: 534px;
   }
 }
 .choose__btn {
@@ -739,19 +808,15 @@ body {
   justify-self: center;
   gap: 14px;
 }
-@media screen and (min-width: 1236px) {
-  .catalog__listbtn :first-child:not(.catalog__icon, .catalog__icons) {
-    position: absolute;
-    right: 280px;
-    bottom: 110px;
-  }
+.catalog__itembtn:first-child {
+  position: absolute;
+  left: -600px;
+  bottom: 230px;
 }
-@media screen and (min-width: 1236px) {
-  .catalog__listbtn :nth-child(2):not(.catalog__icon, .catalog__icons) {
-    position: absolute;
-    left: 885px;
-    bottom: 110px;
-  }
+.catalog__itembtn:nth-child(2) {
+  position: absolute;
+  right: -600px;
+  bottom: 230px;
 }
 .catalog__btn {
   width: 46px;
