@@ -4,12 +4,49 @@
   background-color: $bg-color;
   padding-bottom: 80px;
 
-  @media screen and (min-width: 736px) {
+  @media screen and (min-width: 724px) {
     padding-bottom: 100px;
   }
 
-  @media screen and (min-width: 1248px) {
+  @media screen and (min-width: 1236px) {
     padding-bottom: 164px;
+  }
+
+  &__boxis {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 724px) {
+      flex-direction: row;
+      gap: 64px;
+    }
+
+    @media screen and (min-width: 1236px) {
+      gap: 188px;
+    }
+  }
+
+  &__boxone {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (min-width: 724px) {
+      gap: 32px;
+    }
+
+    @media screen and (min-width: 1236px) {
+      gap: 73px;
+      margin-left: 154px;
+    }
+  }
+
+  &__boxtwo {
+    margin-top: 40px;
+
+    @media screen and (min-width: 724px) {
+      margin-top: 0px;
+    }
   }
 
   &__tittle {
@@ -18,6 +55,33 @@
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -2.7px;
+    width: 271px;
+
+    @media screen and (min-width: 1236px) {
+      width: 282px;
+      height: 132px;
+    }
+  }
+
+  &__img {
+    width: 335px;
+    height: 243px;
+
+    @media screen and (min-width: 724px) {
+      width: 271px;
+      height: 187px;
+    }
+
+    @media screen and (min-width: 1236px) {
+      width: 282px;
+      height: 191px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
   }
 
   &__label {
@@ -28,6 +92,38 @@
     letter-spacing: -0.72px;
   }
 
+  &__input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $main-color;
+    width: 335px;
+
+    @media screen and (min-width: 724px) {
+      width: 364px;
+    }
+
+    @media screen and (min-width: 1236px) {
+      width: 443px;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $main-color;
+    width: 335px;
+
+    @media screen and (min-width: 724px) {
+      width: 364px;
+    }
+
+    @media screen and (min-width: 1236px) {
+      width: 443px;
+    }
+  }
+
   &__btn {
     display: flex;
     padding: 14px 28px;
@@ -36,5 +132,16 @@
     gap: 16px;
     border-radius: 60px;
     border: 1px solid $main-color;
+    background-color: transparent;
+    color: $main-color;
+    margin-top: 24px;
+
+    @media screen and (min-width: 724px) {
+      margin-top: 32px;
+    }
+
+    @media screen and (min-width: 1236px) {
+      margin-top: 64px;
+    }
   }
 }
