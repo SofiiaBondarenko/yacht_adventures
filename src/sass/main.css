@@ -753,19 +753,15 @@ body {
   justify-self: center;
   gap: 14px;
 }
-@media screen and (min-width: 1236px) {
-  .catalog__listbtn :first-child:not(.catalog__icon, .catalog__icons) {
-    position: absolute;
-    right: 280px;
-    bottom: 110px;
-  }
+.catalog__itembtn:first-child {
+  position: absolute;
+  left: -600px;
+  bottom: 230px;
 }
-@media screen and (min-width: 1236px) {
-  .catalog__listbtn :nth-child(2):not(.catalog__icon, .catalog__icons) {
-    position: absolute;
-    left: 885px;
-    bottom: 110px;
-  }
+.catalog__itembtn:nth-child(2) {
+  position: absolute;
+  right: -600px;
+  bottom: 230px;
 }
 .catalog__btn {
   width: 46px;
