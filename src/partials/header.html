@@ -1,33 +1,47 @@
 <header class="header">
-    <div class="container header__box">
+  <div class="container header__box">
     <a href="../index.html" class="header__logo">
-        <svg class="header__logosvg">
-            <use href="./img/symbol-defs.svg#icon-yacht"></use>
-        </svg>
-        Yach Adventures
+      <svg class="header__logosvg">
+        <use href="../img/symbol-defs.svg#icon-yacht"></use>
+      </svg>
+      Yach Adventures
     </a>
     <button type="button" class="header__btn" data-mobile-open>
-        <svg class="header__menu">
-            <use href="./img/symbol-defs.svg#icon-menu"></use>
-        </svg>
+      <svg class="header__menu">
+        <use href="./img/symbol-defs.svg#icon-menu"></use>
+      </svg>
     </button>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item"><a href="" class="header__link">about</a></li>
+        <li class="header__item"><a href="" class="header__link">yachts</a></li>
+        <li class="header__item">
+          <a href="" class="header__link">rewievs</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile is-hidden" data-mobile>
+      <div class="mobile__box">
+        <a href="../index.html" class="mobile__logo">
+          <svg class="mobile__logosvg">
+            <use href="./img/symbol-defs.svg#icon-yacht"></use>
+          </svg>
+          Yach Adventures
+        </a>
+        <button type="button" class="mobile__close" data-mobile-close>
+          <svg class="mobile__icon">
+            <use href="../img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
 
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a href="" class="header__link">about</a></li>
-                <li class="header__item"><a href="" class="header__link">yachts</a></li>
-                <li class="header__item"><a href="" class="header__link">rewievs</a></li>
-            </ul>
-        </nav>
-        <!-- <div class="mobile is-hidden" data-mobile>
-            <button type="button" class="mobile__close" data-mobile-close><svg class="mobile__icon">
-                    <use href="./imgs/symbol-defs.svg#icon-close"></use>
-                </svg></button>
-            <ul class="mobile__list">
-                <li class="mobile__item"><a href="" class="mobile__link">about</a></li>
-                <li class="mobile__item"><a href="" class="mobile__link">yachts</a></li>
-                <li class="mobile__item"><a href="" class="mobile__link">rewievs</a></li>
-            </ul>
-        </div> -->
+      <ul class="mobile__list">
+        <li class="mobile__item"><a href="" class="mobile__link">about</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link">yachts</a></li>
+        <li class="mobile__item">
+          <a href="" class="mobile__link">rewievs</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </header>
