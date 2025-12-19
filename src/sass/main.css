@@ -51,9 +51,10 @@ body {
 
 .container {
   max-width: 1236px;
-  margin-inline: auto;
   padding: 0 10px;
   outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 355px) {
   .container {
@@ -136,9 +137,63 @@ body {
   display: flex;
 }
 
+.mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #11131F;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 20px;
+  border-bottom: 1px solid #93ABAE;
+  width: 335px;
+}
+.mobile__close {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
 .mobile__icon {
-  width: 24px;
-  height: 24px;
+  width: 12px;
+  height: 12px;
+  fill: #F6F5EF;
+}
+.mobile__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 140px auto 0;
+}
+.mobile__link {
+  color: #F6F5EF;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.mobile__logosvg {
+  width: 16px;
+  height: 16px;
+  fill: #93ABAE;
+  margin-right: 8px;
+}
+.mobile__logo {
+  color: #F6F5EF;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .hero {
