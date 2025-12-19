@@ -135,6 +135,7 @@
             position: absolute;
             right: 150px;
             bottom: 0px;
+            z-index: -1;
 
             @media screen and (min-width:724px) {
                 width: 399px;
@@ -169,6 +170,7 @@
             position: absolute;
             bottom: 66px;
             left: 196px;
+            z-index: -1;
 
             @media screen and (min-width:724px) {
                 width: 304px;

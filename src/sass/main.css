@@ -588,6 +588,7 @@ body {
   position: absolute;
   right: 150px;
   bottom: 0px;
+  z-index: -1;
 }
 @media screen and (min-width: 724px) {
   .choose__title::before {
@@ -624,6 +625,7 @@ body {
   position: absolute;
   bottom: 66px;
   left: 196px;
+  z-index: -1;
 }
 @media screen and (min-width: 724px) {
   .choose__title::after {
