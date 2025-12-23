@@ -15,7 +15,7 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/yacht_adventures/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/yacht_adventures/assets/index-1236bca8.css">
+    <link rel="stylesheet" href="/yacht_adventures/assets/index-5d50e822.css">
   </head>
   <body>
     <header class="header">
@@ -370,9 +370,9 @@
  </div>
 </section>
 
-    <section class="rent">
-    <div class="container">
-      <list class="activities__list"> </list>
+    <section class="rent" id="rent">
+    <div class="container rent__boxis">
+      <div class="rent__boxone">
       <h2 class="rent__tittle">Rent a yacht now</h2>
       <picture>
         <source media="(min-width:1236px)" srcset="../img/desktop/rent-desktop@1x.webp 1x, ../img/desktop/rent-desktop@2x.webp 2x">
@@ -380,6 +380,8 @@
         <source media="(max-width:724px)" srcset="../img/mobile/rent-mobile@1x.webp 1x, ../img/mobile/rent-mobile@2x.webp 2x">
       <img src="../img/rent@1x.webp" alt="rent" class="rent__img">
       </picture>
+      </div>  
+      <div class="rent__boxtwo">
       <form class="rent__form">
         <label class="rent__label">
             Full Name
@@ -398,11 +400,12 @@
 
          <label class="rent__label">
             Comment
-            <input required class="rent__input" type="text">
+            <textarea class="rent__textarea"></textarea>
         </label>
       </form>
 
       <button class="rent__btn" type="button">Send</button>
+      </div>
     </div>
 </section>
     <section class="reviews">
