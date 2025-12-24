@@ -15,7 +15,7 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/yacht_adventures/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/yacht_adventures/assets/index-5d50e822.css">
+    <link rel="stylesheet" href="/yacht_adventures/assets/index-cf84f6ae.css">
   </head>
   <body>
     <header class="header">
@@ -28,7 +28,7 @@
     </a>
     <button type="button" class="header__btn" data-mobile-open>
       <svg class="header__menu">
-        <use href="/yacht_adventures/assets/symbol-defs-b5d55c06.svg#icon-menu"></use>
+        <use href="/yacht_adventures/assets/symbol-defs-703a25c8.svg#icon-menu"></use>
       </svg>
     </button>
     <nav class="header__nav">
@@ -44,7 +44,7 @@
       <div class="mobile__box">
         <a href="../index.html" class="mobile__logo">
           <svg class="mobile__logosvg">
-            <use href="/yacht_adventures/assets/symbol-defs-b5d55c06.svg#icon-yacht"></use>
+            <use href="/yacht_adventures/assets/symbol-defs-703a25c8.svg#icon-yacht"></use>
           </svg>
           Yach Adventures
         </a>
@@ -147,18 +147,20 @@
         </div>     
     </div>
 </section>
-    <section class="adrevtures">
+    <section class="adventures">
     <div class="container">
-    <h3 class="adventures__title"><span class="adventure__name">Yacht Adventures</span>fleet is here to take you on the ultimate adventure. Each yacht is hand-picked for its comfort, style, and performance.</h3>
-    <ul class="adventure__list">
-        <li class="adventure__item">
-            <p class="adventure__text">From spacious decks to state-of-the-art technology, our yachts are designed to provide the perfect blend of luxury and functionality. Take a look at our selection below and choose the yacht that matches your needs and preferences.</p>
+        <div class="adventures__wrap">
+    <h3 class="adventures__title"><span class="adventures__name">Yacht Adventures</span> fleet is here to take you on the ultimate adventure. Each yacht is hand-picked for its comfort, style, and performance.</h3>
+    <ul class="adventures__list">
+        <li class="adventures__item">
+            <p class="adventures__text">From spacious decks to state-of-the-art technology, our yachts are designed to provide the perfect blend of luxury and functionality. Take a look at our selection below and choose the yacht that matches your needs and preferences.</p>
         </li>
-        <li class="adventure__item">
-            <p class="adventure__text">No matter which yacht you choose, our experienced crew will ensure that your journey is smooth and enjoyable. Book now and get ready for an unforgettable adventure on the high seas.</p>
+        <li class="adventures__item">
+            <p class="adventures__text">No matter which yacht you choose, our experienced crew will ensure that your journey is smooth and enjoyable. Book now and get ready for an unforgettable adventure on the high seas.</p>
         </li>
     </ul>
     </div>
+        </div>
 </section>
     <section class="choose">
   <div class="container">
@@ -312,14 +314,14 @@
         <li class="catalog__itembtn">
             <button type="button" class="catalog__btn">
                 <svg class="catalog__icon">
-                    <use href="/yacht_adventures/assets/symbol-defs-b5d55c06.svg#icon-arrow"></use>
+                    <use href="/yacht_adventures/assets/symbol-defs-703a25c8.svg#icon-arrow"></use>
                 </svg>
             </button>
         </li>
         <li class="catalog__itembtn">
             <button type="button" class="catalog__btn">
                 <svg class="catalog__icons">
-                    <use href="/yacht_adventures/assets/symbol-defs-b5d55c06.svg#icon-arrow"></use>
+                    <use href="/yacht_adventures/assets/symbol-defs-703a25c8.svg#icon-arrow"></use>
                 </svg>
             </button>
         </li>
@@ -410,51 +412,63 @@
 </section>
     <section class="reviews">
     <div class="container">
-    <h3 class="reviews__title"><span class="reviews__name">Yacht Adventures</span> take pride in providing the best possible service and experience to our customers</h3>
+        <div class="reviews__place">
+    <h3 class="reviews__title"><span class="reviews__title__cap">Yacht Adventures</span> take pride in providing the best possible service and experience to our customers</h3>
     <p class="reviews__text">Our customers have enjoyed unforgettable moments on our yachts. Don't just take our word for it - read on to find out what they have to say about their journey with us.</p>
+            </div>
     <ul class="reviews__list">
         <li class="reviews__item">
-            <img src="../img/john@1x.webp" alt="photo">
-            <h3 class="reviews__title">John Wax</h3>
+            <img src="../img/john@1x.webp" class="reviews__person" alt="photo">
+            <h3 class="reviews__name">John Wax</h3>
             <p class="reviews__describe">I rented the Lagoon 620 with my family for a week-long vacation and it was the best decision ever. The yacht was spacious, comfortable, and luxurious, and the crew took care of everything. </p>
         </li>
         <li class="reviews__item">
-            <img src="../img/victoria@1x.webp" alt="photo">
-            <h3 class="reviews__title">Victoria Romashenko</h3>
+            <img src="../img/victoria@1x.webp" class="reviews__person" alt="photo">
+            <h3 class="reviews__name">Victoria Romashenko</h3>
             <p class="reviews__describe">The Sunseeker Manhattan 66 was the perfect choice for our romantic getaway. The yacht was beautifully designed, with all the amenities we needed, and the crew was attentive and friendly. </p>
         </li>
         <li class="reviews__item">
-            <img src="../img/ihor@1x.webp" alt="photo">
-            <h3 class="reviews__title">Ihor Trachuk</h3>
+            <img src="../img/ihor@1x.webp" class="reviews__person" alt="photo">
+            <h3 class="reviews__name">Ihor Trachuk</h3>
             <p class="reviews__describe">The Azimut 80 was the most luxurious yacht I've ever been on. The cabins were spacious and elegant, and the outdoor areas were perfect for relaxing and entertaining. Worth every penny!</p>
         </li>
     </ul>
-            <a href=""><img src="../img/" alt="photo"></a>
+            <a href="#header" class="scroll"><svg class="scroll__icon">
+                <use href="../img/symbol-defs.svg#icon-arrow-top"></use>
+            </svg></a>
     </div>
 </section>
     <section class="footer">
-    <div class="container">
+    <div class="container footer__box">
         <h4 class="footer__title"><svg class="footer__icon">
-            <use></use>Yacht Adventures
-        </svg></h4>
+            <use href="../img/symbol-defs.svg#icon-yacht"></use></svg>Yacht Adventures
+        </h4>
+
         <ul class="footer__list">
-            <h4 class="footer__cap">We in social</h4>
-            <li class="footer__item">About</li>
-            <li class="footer__item">Yachts</li>
-            <li class="footer__item">Reviews</li>
+            <li class="footer__item"><p class="footer__text">About</p></li>
+            <li class="footer__item"><p class="footer__text">Yachts</p></li>
+            <li class="footer__item"><p class="footer__text">Reviews</p></li>
         </ul>
+
+        <h4 class="footer__cap">We in social</h4>
+
         <ul class="footer__items">
-            <li class="footer__wrap"><svg class="footer__img">
-                <use href="../img/symbol-defs.svg#icon-facebook"></use></svg></li>
-            <li class="footer__wrap">><svg class="footer__img">
-                <use href="../img/symbol-defs.svg#icon-instagram"></use></svg></li>
-            <li class="footer__wrap">><svg class="footer__img">
-                <use href="../img/symbol-defs.svg#icon-youtube"></use></svg></li>
+            <li class="footer__wrap">
+                <svg class="footer__img"><use href="../img/symbol-defs.svg#icon-facebook"></use></svg>
+            </li>
+            <li class="footer__wrap">
+                <svg class="footer__img"><use href="../img/symbol-defs.svg#icon-instagram"></use></svg>
+            </li>
+            <li class="footer__wrap">
+                <svg class="footer__img"><use href="../img/symbol-defs.svg#icon-youtube"></use></svg>
+            </li>
         </ul>
+
         <ul class="footer__lists">
             <li class="footer__liste">2023. Yacht Adventures</li>
             <li class="footer__liste">Privacy Police</li>
         </ul>
+
         <img src="" alt="photo" class="footer__light">
     </div>
 </section>
