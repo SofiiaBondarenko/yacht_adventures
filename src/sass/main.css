@@ -51,9 +51,10 @@ body {
 
 .container {
   max-width: 1236px;
-  margin-inline: auto;
   padding: 0 10px;
   outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 355px) {
   .container {
@@ -136,9 +137,63 @@ body {
   display: flex;
 }
 
+.mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #11131F;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 20px;
+  border-bottom: 1px solid #93ABAE;
+  width: 335px;
+}
+.mobile__close {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
 .mobile__icon {
-  width: 24px;
-  height: 24px;
+  width: 12px;
+  height: 12px;
+  fill: #F6F5EF;
+}
+.mobile__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 140px auto 0;
+}
+.mobile__link {
+  color: #F6F5EF;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.mobile__logosvg {
+  width: 16px;
+  height: 16px;
+  fill: #93ABAE;
+  margin-right: 8px;
+}
+.mobile__logo {
+  color: #F6F5EF;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .hero {
@@ -581,6 +636,7 @@ body {
   position: absolute;
   right: 150px;
   bottom: 0px;
+  z-index: -1;
 }
 @media screen and (min-width: 724px) {
   .choose__title::before {
@@ -617,6 +673,7 @@ body {
   position: absolute;
   bottom: 66px;
   left: 196px;
+  z-index: -1;
 }
 @media screen and (min-width: 724px) {
   .choose__title::after {
@@ -801,19 +858,15 @@ body {
   justify-self: center;
   gap: 14px;
 }
-@media screen and (min-width: 1236px) {
-  .catalog__listbtn :first-child:not(.catalog__icon, .catalog__icons) {
-    position: absolute;
-    right: 280px;
-    bottom: 110px;
-  }
+.catalog__itembtn:first-child {
+  position: absolute;
+  left: -600px;
+  bottom: 230px;
 }
-@media screen and (min-width: 1236px) {
-  .catalog__listbtn :nth-child(2):not(.catalog__icon, .catalog__icons) {
-    position: absolute;
-    left: 885px;
-    bottom: 110px;
-  }
+.catalog__itembtn:nth-child(2) {
+  position: absolute;
+  right: -600px;
+  bottom: 230px;
 }
 .catalog__btn {
   width: 46px;
@@ -939,22 +992,90 @@ body {
   background-color: #11131F;
   padding-bottom: 80px;
 }
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 724px) {
   .rent {
     padding-bottom: 100px;
   }
 }
-@media screen and (min-width: 1248px) {
+@media screen and (min-width: 1236px) {
   .rent {
     padding-bottom: 164px;
   }
 }
+.rent__boxis {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 724px) {
+  .rent__boxis {
+    flex-direction: row;
+    gap: 64px;
+  }
+}
+@media screen and (min-width: 1236px) {
+  .rent__boxis {
+    gap: 188px;
+  }
+}
+.rent__boxone {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 724px) {
+  .rent__boxone {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1236px) {
+  .rent__boxone {
+    gap: 64px;
+    margin-left: 154px;
+  }
+}
+.rent__boxtwo {
+  margin-top: 40px;
+}
+@media screen and (min-width: 724px) {
+  .rent__boxtwo {
+    margin-top: 0px;
+  }
+}
 .rent__tittle {
   color: #F6F5EF;
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -2.7px;
+  width: 271px;
+}
+@media screen and (min-width: 1236px) {
+  .rent__tittle {
+    width: 282px;
+    height: 132px;
+    font-size: 60px;
+  }
+}
+.rent__img {
+  width: 335px;
+  height: 243px;
+}
+@media screen and (min-width: 724px) {
+  .rent__img {
+    width: 271px;
+    height: 187px;
+  }
+}
+@media screen and (min-width: 1236px) {
+  .rent__img {
+    width: 282px;
+    height: 191px;
+  }
+}
+.rent__form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 .rent__label {
   color: #F6F5EF;
@@ -962,6 +1083,40 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.72px;
+}
+.rent__input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #F6F5EF;
+  width: 335px;
+}
+@media screen and (min-width: 724px) {
+  .rent__input {
+    width: 364px;
+  }
+}
+@media screen and (min-width: 1236px) {
+  .rent__input {
+    width: 443px;
+  }
+}
+.rent__textarea {
+  resize: none;
+  height: 58px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #F6F5EF;
+  width: 335px;
+}
+@media screen and (min-width: 724px) {
+  .rent__textarea {
+    width: 364px;
+  }
+}
+@media screen and (min-width: 1236px) {
+  .rent__textarea {
+    width: 443px;
+  }
 }
 .rent__btn {
   display: flex;
@@ -971,6 +1126,19 @@ body {
   gap: 16px;
   border-radius: 60px;
   border: 1px solid #F6F5EF;
+  background-color: transparent;
+  color: #F6F5EF;
+  margin-top: 24px;
+}
+@media screen and (min-width: 724px) {
+  .rent__btn {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1236px) {
+  .rent__btn {
+    margin-top: 64px;
+  }
 }
 
 @media screen and (min-width: 724px) {
