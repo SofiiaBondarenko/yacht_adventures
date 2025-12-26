@@ -24,16 +24,16 @@
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -1.44px;
-    background: linear-gradient(92deg, #bec7c2 41.03%, #a1b5ba 90.31%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     color: $main-color;
     width: 100%;
 
     @media screen and (min-width:724px) {
       width: 497.0px;
     }
+  }
+
+  &__span{
+    color: $accent-color;
   }
 
   &__text {
