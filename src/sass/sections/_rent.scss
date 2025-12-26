@@ -32,11 +32,11 @@
     gap: 16px;
 
     @media screen and (min-width: 724px) {
-      gap: 32px;
+      gap: 42px;
     }
 
     @media screen and (min-width: 1236px) {
-      gap: 64px;
+      gap: 73px;
       margin-left: 154px;
     }
   }
@@ -57,10 +57,14 @@
     letter-spacing: -2.7px;
     width: 271px;
 
-    @media screen and (min-width: 1236px) {
-      width: 282px;
+    @media screen and (min-width: 724px) {
+      width: 271px;
       height: 132px;
       font-size: 60px;
+    }
+
+    @media screen and (min-width: 724px) {
+      width: 282px;
     }
   }
 
@@ -136,13 +140,25 @@
     background-color: transparent;
     color: $main-color;
     margin-top: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.81px;
 
     @media screen and (min-width: 724px) {
       margin-top: 32px;
+      font-size: 18px;
     }
 
     @media screen and (min-width: 1236px) {
       margin-top: 64px;
     }
+  }
+
+  &__icon {
+    transform: rotate(180deg);
+    fill: $main-color;
+    width: 18px;
+    height: 8.7px;
   }
 }
