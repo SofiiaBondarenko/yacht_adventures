@@ -74,7 +74,7 @@ body {
 
 .header {
   padding: 24px 0;
-  border-bottom: 1px solid #93ABAE;
+  border-bottom: 1px solid rgba(246, 245, 239, 0.5176470588);
 }
 @media screen and (min-width: 724px) {
   .header {
@@ -129,6 +129,10 @@ body {
   font-size: 14px;
   line-height: 1.18;
   letter-spacing: 0.42px;
+  transition: color 250ms ease;
+}
+.header__link:hover {
+  color: #93ABAE;
 }
 .header__logo {
   color: #F6F5EF;
@@ -198,6 +202,7 @@ body {
 
 .hero {
   margin-top: 40px;
+  background-image: linear-gradient();
 }
 @media screen and (min-width: 724px) {
   .hero {
@@ -226,24 +231,7 @@ body {
     gap: 11px;
   }
 }
-.hero__item:first-child .hero__btn {
-  width: 130px;
-  height: 43px;
-  padding: 14px 28px;
-  background-color: #93ABAE;
-  color: #F6F5EF;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.1;
-  align-items: center;
-  justify-content: center;
-  border-radius: 60px;
-  display: flex;
-  letter-spacing: -0.63px;
-}
-.hero__item:nth-child(2) .hero__btn {
-  width: 104px;
-  height: 43px;
+.hero__btn {
   padding: 14px 28px;
   background-color: #11131F;
   color: #F6F5EF;
@@ -258,6 +246,11 @@ body {
   gap: 10px;
   border-radius: 60px;
   border: 1px solid #F6F5EF;
+  transition: background-color 250ms ease, border 250ms ease;
+}
+.hero__btn:hover {
+  background-color: #93ABAE;
+  border: 1px solid #93ABAE;
 }
 .hero__collagebox {
   width: 335px;
@@ -276,6 +269,43 @@ body {
 @media screen and (min-width: 1236px) {
   .hero__collagebox {
     margin-top: 24px;
+  }
+}
+.hero__collagebox::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 255px;
+  height: 255px;
+  transform: rotate(-44.916deg);
+  background-image: radial-gradient(circle, #e7f9ff 0%, #11131F 100%);
+  background-size: 255px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+  filter: blur(90px);
+  position: absolute;
+  right: 150px;
+  bottom: 0px;
+  z-index: -1;
+}
+@media screen and (min-width: 724px) {
+  .hero__collagebox::before {
+    width: 399px;
+    height: 399px;
+    background-size: 399px;
+    right: 280px;
+    bottom: 30px;
+  }
+}
+@media screen and (min-width: 1236px) {
+  .hero__collagebox::before {
+    width: 414px;
+    height: 414px;
+    background-size: 414px;
+    right: 0;
+    left: 66px;
+    bottom: 86px;
   }
 }
 .hero__bg {

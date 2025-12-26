@@ -2,7 +2,7 @@
 
 .hero {
   margin-top: 40px;
-
+  background-image: linear-gradient();
   @media screen and (min-width: 724px) {
     margin-top: 64px;
   }
@@ -29,11 +29,9 @@
     }
   }
 
-  &__item:first-child .hero__btn {
-    width: 130px;
-    height: 43px;
+  &__btn {
     padding: 14px 28px;
-    background-color: $accent-color;
+    background-color: $bg-color;
     color: $main-color;
     font-size: 14px;
     font-weight: 700;
@@ -42,29 +40,19 @@
     justify-content: center;
     border-radius: 60px;
     display: flex;
-    letter-spacing: -0.63px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    border: 1px solid $main-color;
+    transition: background-color 250ms ease, border 250ms ease;
+
+      &:hover {
+      background-color: $accent-color;
+      border: 1px solid $accent-color;
+  }
   }
 
-  &__item:nth-child(2) {
-    .hero__btn {
-      width: 104px;
-      height: 43px;
-      padding: 14px 28px;
-      background-color: $bg-color;
-      color: $main-color;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.1;
-      align-items: center;
-      justify-content: center;
-      border-radius: 60px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      border-radius: 60px;
-      border: 1px solid $main-color;
-    }
-  }
+
 
   &__collagebox {
     width: 335px;
@@ -80,6 +68,41 @@
 
     @media screen and (min-width: 1236px) {
       margin-top: 24px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      border-radius: 50%;
+      width: 255px;
+      height: 255px;
+      transform: rotate(-44.916deg);
+      background-image: radial-gradient(circle, #e7f9ff 0%, $bg-color 100%);
+      background-size: 255px;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.7;
+      filter: blur(90px);
+      position: absolute;
+      right: 150px;
+      bottom: 0px;
+      z-index: -1;
+
+      @media screen and (min-width: 724px) {
+        width: 399px;
+        height: 399px;
+        background-size: 399px;
+        right: 280px;
+        bottom: 30px;
+      }
+      @media screen and (min-width: 1236px) {
+        width: 414px;
+        height: 414px;
+        background-size: 414px;
+        right: 0;
+        left: 66px;
+        bottom: 86px;
+      }
     }
   }
 
@@ -178,9 +201,9 @@
     align-items: center;
 
     @media screen and (min-width: 724px) {
-        width: 362.0px;
-        height: 66.0px;
-        bottom: 64px;
+      width: 362px;
+      height: 66px;
+      bottom: 64px;
     }
   }
 
@@ -193,9 +216,9 @@
     text-transform: uppercase;
 
     @media screen and (min-width: 724px) {
-        font-size: 60px;
-        letter-spacing: -2.7px;
-    }    
+      font-size: 60px;
+      letter-spacing: -2.7px;
+    }
   }
 
   &__text {
@@ -206,12 +229,12 @@
     letter-spacing: -0.63px;
 
     @media screen and (min-width: 724px) {
-        font-size: 18px;
-        letter-spacing: -0.81px;
-    }  
+      font-size: 18px;
+      letter-spacing: -0.81px;
+    }
   }
 
-  &__textbox{
+  &__textbox {
     margin-top: 68px;
   }
 
@@ -225,12 +248,12 @@
 
     @media screen and (min-width: 724px) {
       font-size: 60px;
-      width: 698.0px;
+      width: 698px;
     }
 
     @media screen and (min-width: 1236px) {
       font-size: 60px;
-      width: 554.0px;
+      width: 554px;
     }
   }
 
