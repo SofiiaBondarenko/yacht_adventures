@@ -9,6 +9,21 @@
 
     &__box{
         border-top: 1px solid rgba(246, 245, 239, 0.20);
+        
+
+
+        @media screen and (min-width:1248px) {
+
+        }
+    }
+
+    &__boxes{
+        @media screen and (min-width:724px) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+        }
     }
 
     &__title{
@@ -16,6 +31,14 @@
     align-items: center;
     gap: 8px;
     color: $main-color;
+
+    @media screen and (min-width:724px) {
+      
+    }
+
+    @media screen and (min-width:1248px) {
+      
+    }
     }
 
     &__icon{
@@ -28,6 +51,17 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+    align-items: start;
+
+
+    @media screen and (min-width:724px) {
+        align-items: center;
+    }
+
+    @media screen and (min-width:1248px) {
+      margin: 0px 0px;
+      flex-direction: row;
+    }
     }
 
     &__text{
@@ -41,13 +75,19 @@
 
     &__cap{
     color: $main-color;
-    font-family: "DM Sans";
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 110%;
+    line-height: 1.1;
     text-transform: uppercase;
     margin-top: 40px;
+
+    @media screen and (min-width:724px) {
+      margin-top: 0;
+    }
+
+    @media screen and (min-width:1248px) {
+      margin-top: 40px;
+    }
     }
 
     &__items{
@@ -78,15 +118,26 @@
         gap: 14px;
         margin-top: 40px;
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width:724px) {
+
+        }
     }
 
-    &__liste{
-    color: rgba(246, 245, 239, 0.50);
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0.36px;
+    &__desk{
+        color: rgba(246, 245, 239, 0.50);
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 0.36px;
+
+        @media screen and (min-width:724px) {
+            font-size: 14px;
+            letter-spacing: 0.42px;
+        }
     }
 
 }
