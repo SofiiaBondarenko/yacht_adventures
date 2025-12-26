@@ -179,9 +179,28 @@
     align-items: center;
     background-color: transparent;
     border: 1px solid  $main-color;
+    transition: all 450ms;
+
+    // &:is(:hover, :focus){
+    //   border: 1px solid $hover-color2;
+    //   .catalog__icon + .catalog__icons{
+    //     fill: $hover-color2;
+    //   }
+
+    &:hover,
+    &:focus{
+      border: 1px solid $hover-color2;
+      .catalog__icon{
+        fill: $hover-color2;
+      }
+      .catalog__icons{
+        fill: $hover-color2;
+      }
+    }
 
     &:first-child{
       fill: $main-color;
+      transition: all 450ms;
     }
   }
 

@@ -1,7 +1,7 @@
 @use "../base/var" as *;
 
 .choose{
-    padding: 40px 0 161px;
+    padding: 40px 0 80px;
 
     @media screen and (min-width:724px) {
         padding: 64px 0 100px;
@@ -9,6 +9,15 @@
 
     @media screen and (min-width:1236px) {
         padding: 64px 0 164px;
+    }
+
+    &__box{
+        position: relative;
+        padding-bottom: 60px;
+
+        @media screen and (min-width:724px) {
+            position: static;
+        }
     }
 
     &__list{
@@ -66,6 +75,7 @@
                 position: relative;
                 top: 200px;
                 left: 2px;
+                z-index: -1;
             }
 
             @media screen and (min-width:1236px) {
@@ -74,28 +84,18 @@
         }
     }
 
-    &__wrapper{
+    &__wrap {
         position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
 
-        @media screen and (min-width:724px) {
+        @media screen and (min-width: 724px) {
             position: static;
+            margin-top: 40px;
         }
     }
 
-    &__wrap{
-        position: relative;
-        bottom: 150px;
-
-        @media screen and (min-width:724px) {
-            bottom: 0;
-            margin-left: 32px;
-            z-index: 1;
-        }
-
-        @media screen and (min-width:1236px) {
-            margin-left: 167px;
-        }
-    }
 
     &__title{
         width: 310px;
@@ -199,10 +199,16 @@
         font-weight: 700;
         line-height: 110%;
         letter-spacing: -0.63px;
+        transition: all 450ms;
 
         @media screen and (min-width:724px) {
             font-size: 18px;
             letter-spacing: -0.81px;
+        }
+
+        &:is(:hover, :focus){
+            border: 1px solid $hover-color2;
+            color: $hover-color2;
         }
     }
 }

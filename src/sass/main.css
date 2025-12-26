@@ -445,7 +445,7 @@ body {
 }
 
 .choose {
-  padding: 40px 0 161px;
+  padding: 40px 0 80px;
 }
 @media screen and (min-width: 724px) {
   .choose {
@@ -455,6 +455,15 @@ body {
 @media screen and (min-width: 1236px) {
   .choose {
     padding: 64px 0 164px;
+  }
+}
+.choose__box {
+  position: relative;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 724px) {
+  .choose__box {
+    position: static;
   }
 }
 .choose__list {
@@ -517,6 +526,7 @@ body {
     position: relative;
     top: 200px;
     left: 2px;
+    z-index: -1;
   }
 }
 @media screen and (min-width: 1236px) {
@@ -524,28 +534,16 @@ body {
     transform: translate(-570px, 300px);
   }
 }
-.choose__wrapper {
-  position: absolute;
-}
-@media screen and (min-width: 724px) {
-  .choose__wrapper {
-    position: static;
-  }
-}
 .choose__wrap {
-  position: relative;
-  bottom: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
 }
 @media screen and (min-width: 724px) {
   .choose__wrap {
-    bottom: 0;
-    margin-left: 32px;
-    z-index: 1;
-  }
-}
-@media screen and (min-width: 1236px) {
-  .choose__wrap {
-    margin-left: 167px;
+    position: static;
+    margin-top: 40px;
   }
 }
 .choose__title {
@@ -655,12 +653,17 @@ body {
   font-weight: 700;
   line-height: 110%;
   letter-spacing: -0.63px;
+  transition: all 450ms;
 }
 @media screen and (min-width: 724px) {
   .choose__link {
     font-size: 18px;
     letter-spacing: -0.81px;
   }
+}
+.choose__link:is(:hover, :focus) {
+  border: 1px solid #BEC7C2;
+  color: #BEC7C2;
 }
 
 .catalog {
@@ -836,9 +839,20 @@ body {
   align-items: center;
   background-color: transparent;
   border: 1px solid #F6F5EF;
+  transition: all 450ms;
+}
+.catalog__btn:hover, .catalog__btn:focus {
+  border: 1px solid #BEC7C2;
+}
+.catalog__btn:hover .catalog__icon, .catalog__btn:focus .catalog__icon {
+  fill: #BEC7C2;
+}
+.catalog__btn:hover .catalog__icons, .catalog__btn:focus .catalog__icons {
+  fill: #BEC7C2;
 }
 .catalog__btn:first-child {
   fill: #F6F5EF;
+  transition: all 450ms;
 }
 .catalog__icons {
   transform: rotate(180deg);
