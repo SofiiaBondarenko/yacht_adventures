@@ -11,6 +11,10 @@
     padding-bottom: 164px;
   }
 
+  &__box{
+    position: relative;
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -143,26 +147,25 @@
   }
 
   &__listbtn{
-    position: relative;
     display: flex;
     align-items: center;
     justify-self: center;
     gap: 14px;
+  }
 
-    & :first-child:not(.catalog__icon, .catalog__icons){
-      @media screen and (min-width: 1236px) {
-        position: absolute;
-        right: 280px;
-        bottom: 110px;
-      }
+  &__itembtn:first-child{
+    @media screen and (min-width:1236px) {
+      position: absolute;
+      left: 12px;
+      bottom: 225px;
     }
+  }
 
-    & :nth-child(2):not(.catalog__icon, .catalog__icons){
-      @media screen and (min-width: 1236px) {
-        position: absolute;
-        left: 885px;
-        bottom: 110px;
-      }
+  &__itembtn:nth-child(2){
+    @media screen and (min-width:1236px) {
+      position: absolute;
+      right: 12px;
+      bottom: 225px;
     }
   }
 
@@ -176,9 +179,28 @@
     align-items: center;
     background-color: transparent;
     border: 1px solid  $main-color;
+    transition: all 450ms;
+
+    // &:is(:hover, :focus){
+    //   border: 1px solid $hover-color2;
+    //   .catalog__icon + .catalog__icons{
+    //     fill: $hover-color2;
+    //   }
+
+    &:hover,
+    &:focus{
+      border: 1px solid $hover-color2;
+      .catalog__icon{
+        fill: $hover-color2;
+      }
+      .catalog__icons{
+        fill: $hover-color2;
+      }
+    }
 
     &:first-child{
       fill: $main-color;
+      transition: all 450ms;
     }
   }
 

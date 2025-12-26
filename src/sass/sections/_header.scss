@@ -2,7 +2,7 @@
 
 .header {
   padding: 24px 0;
-  border-bottom: 1px solid $accent-color;
+  border-bottom: 1px solid $details-color;
 
   @media screen and (min-width: 724px) {
     padding: 32px 0;
@@ -66,6 +66,11 @@
     font-size: 14px;
     line-height: 1.18;
     letter-spacing: 0.42px;
+    transition: color 250ms ease;
+
+  &:hover{
+    color: $accent-color;
+  }
 
   }
 
@@ -77,7 +82,73 @@
   }
 }
 
-.mobile__icon {
-  width: 24px;
-  height: 24px;
+
+.mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
+
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+    border-bottom: 1px solid $accent-color;
+    width: 335.0px;
+  }
+
+  &__close{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+  }
+
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+    fill: $main-color;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 140px auto 0;
+  }
+
+  &__link {
+    color: $main-color;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+    &__logosvg {
+    width: 16px;
+    height: 16px;
+    fill: $accent-color;
+    margin-right: 8px;
+    }
+
+    &__logo {
+    color: $main-color;
+    align-items: center;
+    text-transform: uppercase;
+    display: flex;
+  }
 }
+
+  
+  .is-hidden{
+    pointer-events: none;
+    opacity: 0;
+  }
