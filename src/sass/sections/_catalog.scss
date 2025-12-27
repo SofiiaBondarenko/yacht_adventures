@@ -1,19 +1,25 @@
 @use '../base/var' as *;
 
+
 .catalog {
   padding-bottom: 80px;
+
 
   @media screen and (min-width: 724px) {
     padding-bottom: 100px;
   }
 
+
   @media screen and (min-width: 1236px) {
     padding-bottom: 164px;
   }
 
+
   &__box{
     position: relative;
+    overflow: hidden;
   }
+
 
   &__list {
     display: flex;
@@ -22,24 +28,30 @@
     gap: 16px;
     margin-bottom: 24px;
 
+
     @media screen and (min-width: 724px) {
       margin-bottom: 32px;
     }
+
 
     @media screen and (min-width: 1236px) {
       margin-bottom: 0;
     }
 
+
     & :nth-child(2):not(.catalog__wrap, .catalog__subtitle, .catalog__elements, .catalog__elems, .catalog__elem, .catalog__element){
       display: none;
+
 
       @media screen and (min-width: 724px) {
         display: block;
       }
     }
 
+
     & :nth-child(3):not(.catalog__lists, .catalog__elem, .catalog__element){
       display: none;
+
 
       @media screen and (min-width: 1236px) {
         display: block;
@@ -47,20 +59,24 @@
     }
   }
 
+
   &__item {
     background-color: $dark_accent-color;
     padding: 18px 18px 24px;
     border-radius: 24px;
+
 
     @media screen and (min-width: 724px) {
         padding: 16px 16px 32px;
     }
   }
 
+
   &__img {
     width: 299px;
     height: 251px;
     margin-bottom: 24px;
+
 
     @media screen and (min-width: 724px) {
       width: 312px;
@@ -68,11 +84,13 @@
       margin-bottom: 32px;
     }
 
+
     @media screen and (min-width: 1236px) {
       width: 322px;
       height: 268px;
     }
   }
+
 
   &__wrap{
     display: flex;
@@ -80,10 +98,12 @@
     justify-content: space-between;
     margin: 0 0 24px 6px;
 
+
     @media screen and (min-width: 724px) {
       margin: 0 0 32px 16px;
     }
   }
+
 
   &__title {
     color: $main-color;
@@ -93,6 +113,7 @@
     letter-spacing: -0.72px;
     text-transform: uppercase;
   }
+
 
   &__subtitle {
     color: $main-color;
@@ -104,16 +125,19 @@
     text-transform: uppercase;
   }
 
+
   &__lists{
     display: flex;
     align-items: baseline;
     gap: 32px;
     margin-left: 6px;
 
+
     @media screen and (min-width: 724px) {
       margin-left: 16px;
     }
   }
+
 
   &__items{
     display: flex;
@@ -122,12 +146,14 @@
     gap: 6px;
   }
 
+
   &__elems{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
   }
+
 
   &__text {
     color: $main-color;
@@ -138,6 +164,7 @@
     text-transform: uppercase;
   }
 
+
   &__desk {
     color: $main-color;
     font-size: 14px;
@@ -146,12 +173,14 @@
     letter-spacing: 0.42px;
   }
 
+
   &__listbtn{
     display: flex;
     align-items: center;
     justify-self: center;
     gap: 14px;
   }
+
 
   &__itembtn:first-child{
     @media screen and (min-width:1236px) {
@@ -161,6 +190,7 @@
     }
   }
 
+
   &__itembtn:nth-child(2){
     @media screen and (min-width:1236px) {
       position: absolute;
@@ -168,6 +198,7 @@
       bottom: 225px;
     }
   }
+
 
   &__btn{
     width: 46px;
@@ -181,28 +212,62 @@
     border: 1px solid  $main-color;
     transition: all 450ms;
 
+
     // &:is(:hover, :focus){
     //   border: 1px solid $hover-color2;
     //   .catalog__icon + .catalog__icons{
     //     fill: $hover-color2;
     //   }
 
+
     &:hover,
     &:focus{
       border: 1px solid $hover-color2;
       .catalog__icon{
+        animation-name: icon;
+        animation-duration: 1500ms;
         fill: $hover-color2;
       }
       .catalog__icons{
+        animation-name: icons;
+        animation-duration: 1500ms;
         fill: $hover-color2;
       }
     }
+
+
+    @keyframes icon {
+      0%{
+        transform: rotate(0deg);
+      }
+      50%{
+        transform: rotate(360deg);
+      }
+      100%{
+        transform: rotate(0deg);
+      }
+    }
+
+
+    @keyframes icons {
+      0%{
+        transform: rotate(180deg);
+      }
+      50%{
+        transform: rotate(540deg);
+      }
+      100%{
+        transform: rotate(180deg);
+      }
+    }
+
 
     &:first-child{
       fill: $main-color;
       transition: all 450ms;
     }
   }
+
 
   &__icons{
     transform: rotate(180deg);
