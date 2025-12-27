@@ -1213,6 +1213,7 @@ body {
   background-color: transparent;
   border-bottom: 1px solid #F6F5EF;
   width: 335px;
+  color: #F6F5EF;
 }
 @media screen and (min-width: 724px) {
   .rent__input {
@@ -1231,6 +1232,7 @@ body {
   background-color: transparent;
   border-bottom: 1px solid #F6F5EF;
   width: 335px;
+  color: #F6F5EF;
 }
 @media screen and (min-width: 724px) {
   .rent__textarea {
