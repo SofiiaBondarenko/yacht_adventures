@@ -13,10 +13,9 @@
     align-items: center;
     justify-content: space-between;
 
-  // @media screen and (min-width: 724px) {
-  //   gap: 269px;
-  // }
-
+    // @media screen and (min-width: 724px) {
+    //   gap: 269px;
+    // }
   }
 
   &__list {
@@ -36,29 +35,27 @@
     }
   }
 
-
-  &__btn{
+  &__btn {
     background-color: transparent;
 
-    @media screen and (min-width:724px) {
+    @media screen and (min-width: 724px) {
       display: none;
     }
   }
 
-
-  &__menu{
-    width: 24.0px;
-    height: 24.0px;
+  &__menu {
+    width: 24px;
+    height: 24px;
     fill: $main-color;
   }
 
-  &__nav{
+  &__nav {
     display: none;
 
-      @media screen and (min-width:724px){
-          display: block;
-      }
+    @media screen and (min-width: 724px) {
+      display: block;
     }
+  }
 
   &__link {
     color: $main-color;
@@ -68,10 +65,9 @@
     letter-spacing: 0.42px;
     transition: color 250ms ease;
 
-  &:hover{
-    color: $accent-color;
-  }
-
+    &:hover {
+      color: $accent-color;
+    }
   }
 
   &__logo {
@@ -79,9 +75,12 @@
     align-items: center;
     text-transform: uppercase;
     display: flex;
+
+    &:hover {
+      color: $accent-color;
+    }
   }
 }
-
 
 .mobile {
   position: fixed;
@@ -94,23 +93,21 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 
-
-  &__box{
+  &__box {
     display: flex;
     justify-content: space-between;
     padding: 24px 20px;
     border-bottom: 1px solid $accent-color;
-    width: 335.0px;
+    width: 335px;
   }
 
-  &__close{
+  &__close {
     width: 20px;
     height: 20px;
     background-color: transparent;
   }
-
 
   &__icon {
     width: 12px;
@@ -132,23 +129,26 @@
     text-transform: uppercase;
   }
 
-    &__logosvg {
+  &__logosvg {
     width: 16px;
     height: 16px;
     fill: $accent-color;
     margin-right: 8px;
-    }
+  }
 
-    &__logo {
+  &__logo {
     color: $main-color;
     align-items: center;
     text-transform: uppercase;
     display: flex;
+
+    &:hover {
+      color: $accent-color;
+    }
   }
 }
 
-  
-  .is-hidden{
-    pointer-events: none;
-    opacity: 0;
-  }
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}

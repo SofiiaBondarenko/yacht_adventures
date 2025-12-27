@@ -1,79 +1,80 @@
-@use "../base/var" as *;
+@use '../base/var' as *;
 
-.footer{
-    padding-top: 60px;
+.footer {
+  padding-top: 60px;
 
-    @media screen and (min-width:724px) {
-        padding-top: 96px;
+  @media screen and (min-width: 724px) {
+    padding-top: 96px;
+  }
+
+  &__box {
+    border-top: 1px solid rgba(246, 245, 239, 0.2);
+
+    @media screen and (min-width: 1248px) {
     }
+  }
 
-    &__box{
-        border-top: 1px solid rgba(246, 245, 239, 0.20);
-        
-
-
-        @media screen and (min-width:1248px) {
-
-        }
+  &__boxes {
+    @media screen and (min-width: 724px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
     }
+  }
 
-    &__boxes{
-        @media screen and (min-width:724px) {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-            justify-content: space-between;
-        }
-    }
-
-    &__title{
+  &__title {
     display: flex;
     align-items: center;
     gap: 8px;
     color: $main-color;
 
-    @media screen and (min-width:724px) {
-      
+    &:hover { 
+      color: $accent-color;
+      .footer__icon{
+      fill: $accent-color;
+      }
     }
 
-    @media screen and (min-width:1248px) {
-      
-    }
+    @media screen and (min-width: 724px) {
     }
 
-    &__icon{
+    @media screen and (min-width: 1248px) {
+    }
+  }
+
+  &__icon {
     width: 18px;
     height: 18px;
     fill: $main-color;
-    }
+  }
 
-    &__list{
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 14px;
     align-items: start;
 
-
-    @media screen and (min-width:724px) {
-        align-items: center;
+    @media screen and (min-width: 724px) {
+      align-items: center;
     }
 
-    @media screen and (min-width:1248px) {
+    @media screen and (min-width: 1248px) {
       margin: 0px 0px;
       flex-direction: row;
     }
-    }
+  }
 
-    &__text{
+  &__text {
     color: $main-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    }
+  }
 
-    &__cap{
+  &__cap {
     color: $main-color;
     font-size: 14px;
     font-weight: 700;
@@ -81,63 +82,66 @@
     text-transform: uppercase;
     margin-top: 40px;
 
-    @media screen and (min-width:724px) {
+    @media screen and (min-width: 724px) {
       margin-top: 0;
     }
 
-    @media screen and (min-width:1248px) {
+    @media screen and (min-width: 1248px) {
       margin-top: 40px;
     }
-    }
+  }
 
-    &__items{
+  &__items {
     display: flex;
     gap: 14px;
-    }
+  }
 
-    &__wrap{
+  &__wrap {
     width: 32px;
     height: 32px;
     stroke-width: 1px;
-    stroke: rgba(246, 245, 239, 0.50);
+    stroke: rgba(246, 245, 239, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(246, 245, 239, 0.50);
+    border: 1px solid rgba(246, 245, 239, 0.5);
     border-radius: 6px;
-    }
 
-    &__img{
+    &:hover {
+      background-color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+  }
+
+  &__img {
     width: 20px;
     height: 27px;
     fill: $main-color;
+  }
+
+  &__lists {
+    display: flex;
+    gap: 14px;
+    margin-top: 40px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 724px) {
     }
+  }
 
-    &__lists{
-        display: flex;
-        gap: 14px;
-        margin-top: 40px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+  &__desk {
+    color: rgba(246, 245, 239, 0.5);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.36px;
 
-        @media screen and (min-width:724px) {
-
-        }
+    @media screen and (min-width: 724px) {
+      font-size: 14px;
+      letter-spacing: 0.42px;
     }
-
-    &__desk{
-        color: rgba(246, 245, 239, 0.50);
-        text-align: center;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1.2;
-        letter-spacing: 0.36px;
-
-        @media screen and (min-width:724px) {
-            font-size: 14px;
-            letter-spacing: 0.42px;
-        }
-    }
-
+  }
 }
